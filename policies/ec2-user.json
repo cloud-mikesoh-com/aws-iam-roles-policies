@@ -10,6 +10,7 @@
     {
       "Sid": "AllowPutGetDeleteToBackupS3Bucket",
       "Action": [
+        "s3:ListObject",
         "s3:GetObject",
         "s3:PutObject",
         "s3:DeleteObject",
