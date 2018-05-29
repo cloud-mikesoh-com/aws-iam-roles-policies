@@ -6,6 +6,16 @@
   "Placement": {
     "AvailabilityZone": "us-east-1a"
   },
+  "BlockDeviceMappings": [
+    {
+      "DeviceName": "/dev/sda1",
+      "Ebs": {
+        "DeleteOnTermination": true,
+        "VolumeType": "gp2",
+        "VolumeSize": 8
+      }
+    }
+  ],
   "IamInstanceProfile": {
       "Arn": "arn:aws:iam::426869176820:instance-profile/ec2-user-role"
   },
